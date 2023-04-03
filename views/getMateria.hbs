@@ -1,0 +1,33 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="infoHeader">
+        <h1>Matérias</h1>
+        <p>Algumas de nossas matérias:</p>
+
+    </header>
+    <div class="btnCad">
+        <button><a href="/">Rotas</a></button>
+        <button><a href="/cadmateria">Cadastro de matérias</a></button>
+        <button><a href="/buscarmateria">Buscar</a></button>
+    </div>
+    <div class="infoCursos">
+        {{#each listarMaterias}}
+        <div>
+            <h2>#{{id}} {{nome}}</h2>
+            <a class="linkInfos" href="/materia/{{this.id}}">
+                <ul>
+                    <li><strong>Nome:</strong> {{nome}}</li>
+                    <li><strong>Carga Horária:</strong> {{cargaHoraria}}</li>
+                    <li><strong>Tempos:</strong> {{tempos}}</li>
+                </ul>
+                <button><a href="/materia/edit/{{this.id}}">Editar</a></button>
+                <button><a href="/removermateria/{{this.id}}">Excluir</a></button>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+
+</body>

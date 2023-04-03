@@ -1,0 +1,49 @@
+<head>
+    <style>
+        body{
+            background-image: linear-gradient(to right top, #081b2e, #091725, #07121c, #050c13, #030405);
+        }
+        .editInfos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            color: #fff;
+        }
+        .editInfos form{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1rem;
+        }
+        .editInfos input{
+            padding: .3rem;
+        }
+        .editInfos button a{
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+
+<div class="editInfos">
+    <h2>Editar informações de {{infos.nome}}</h2>
+    <form action="/updatecurso" method="post">
+        <label for="id">Id:</label>
+        <input type="text" name="id" value="{{infos.id}}">
+        <label for="nome">Nome:</label>
+        <input type="text" name="nome" value="{{infos.nome}}">
+        <label for="modulos">Modulos:</label>
+        <input type="text" name="modulos" value="{{infos.modulos}}">
+        <label for="turmas">Turmas:</label>
+        <input type="text" name="turmas" value="{{infos.turmas}}">
+        <label for="cargaHoraria">Carga Horária:</label>
+        <input type="text" name="cargaHoraria" value="{{infos.cargaHoraria}}">
+        <label for="descricao">Descrição:</label>
+        <textarea name="descricao" cols="20" rows="7">{{infos.descricao}}</textarea>
+        <input type="submit">
+    </form>
+    <button><a href="/cursos">Voltar</a></button>
+</div>

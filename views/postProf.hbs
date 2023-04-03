@@ -1,0 +1,20 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<div class="form-control">
+    <h1>Registros de Professores</h1>
+    
+    <form action="/cadastrarProf" method="post">
+        <input type="text" required name="nome" placeholder="Digite o nome do professor">
+        <input type="text" required name="matricula" placeholder="Digite o número da sua matricula">
+        <input type="text" required name="telefone" placeholder="Número de telefone">
+        <input type="text" required name="endereco" placeholder="Endereço">
+        
+        <input type="submit">
+    </form>
+    <div class="btn-control">
+        <button><a href="/professores">Professores</a></button>
+        <button><a href="/buscarprofessor">Buscar</a></button>
+    </div>
+</div>

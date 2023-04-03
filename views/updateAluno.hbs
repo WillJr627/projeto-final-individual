@@ -1,0 +1,49 @@
+<head>
+    <style>
+        body{
+            background-image: linear-gradient(to right top, #081b2e, #091725, #07121c, #050c13, #030405);
+        }
+        .editInfos{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            color: #fff;
+        }
+        .editInfos form{
+            width: 20%;
+            display: flex;
+            flex-direction: column;
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+        .editInfos h2{
+            margin-top: 5rem;
+        }
+        .editInfos input{
+            padding: .5rem;
+        }
+        .editInfos button a{
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<div class="editInfos">
+    <h2>Editar informações de {{infos.nome}}</h2>
+    <form action="/updatealuno" method="post">
+        <label for="id">Id:</label>
+        <input type="text" name="id" value="{{infos.id}}">
+        <label for="nome">Nome</label>
+        <input type="text" name="nome" value="{{infos.nome}}">
+        <label for="turma">Turma:</label>
+        <input type="text" name="turma" value="{{infos.turma}}">
+        <label for="media">Média:</label>
+        <input type="text" name="media" value="{{infos.media}}">
+        <label for="telefone">Telefone:</label>
+        <input type="text" name="telefone" value="{{infos.telefone}}">
+        <input type="submit">
+    </form>
+    <button><a href="/aluno ">Voltar</a></button>
+</div>

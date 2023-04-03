@@ -1,0 +1,107 @@
+body{
+    background-image: linear-gradient(to right top, #081b2e, #091725, #07121c, #050c13, #030405);
+}
+.form-control{
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.form-control form{
+    display: flex;
+    flex-direction: column;
+    gap: .8rem;
+}
+.form-control form input{
+    padding: .6rem;
+    width: 20rem;
+}
+.btn-control{
+    gap: 2rem;
+}
+.btn-control button{
+    padding: .4rem;
+}
+.btn-control button a{
+    text-decoration: none;
+    color: #000;
+}
+.infoHeader{
+    color: #fff;
+    text-align: center;
+    margin: 4rem 0 3rem 0;
+}
+.infoHeader p{
+    font-size: 1.2rem;
+}
+.infoCursos{
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+.infoCursos div{
+    border: 1px solid #fff;
+    padding: 1rem;
+    width: 20rem;
+    text-align: center;
+}
+.infoCursos div:hover{
+    transform: scale(1.1);
+    transition: all ease-in-out .2s;
+}
+.infoCursos div ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    margin-bottom: .9rem;
+    color: #fff;
+}
+.linkInfos ul{
+    display: flex;
+    flex-direction: column;
+    gap: .6rem;
+}
+.infoCursos div a, .btnCad a{
+    text-decoration: none;
+    color: #000;
+}
+.btnCad{
+   width: 100%; 
+   text-align: center;
+   margin-bottom: 3rem;
+}
+
+.editInfos{
+    background-color: red;
+}
+
+
+.rotas {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 12rem;
+    gap: 6rem;
+    color: #fff;
+  }
+  
+  .rotas ul {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    list-style: none;
+  }
+  .rotas ul li{
+    margin-bottom: 4rem;
+  }
+  .rotas ul a {
+    border: 2px solid #fff;
+    padding: 2rem;
+    background-color: #ffff;
+    text-decoration: none;
+    color: #030405;
+  }
+  

@@ -1,0 +1,20 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<div class="form-control">
+    <h1>Registro de Cursos</h1>
+    
+    <form action="/cadastrar" method="post">
+        <input type="text" required name="nome" placeholder="Digite o nome do curso">
+        <input type="text" required name="modulos" placeholder="Quantidade de módulos">
+        <input type="text" required name="turmas" placeholder="Quantidade de turmas">
+        <input type="text" required name="cargaHoraria" placeholder="Carga horária do curso">
+        <textarea name="descricao" required placeholder="Descrição do curso" cols="30" rows="10"></textarea>
+        <input type="submit">
+    </form>
+    <div class="btn-control">
+        <button><a href="/cursos">Cursos</a></button>
+        <button><a href="/buscar">Buscar</a></button>
+    </div>
+</div>

@@ -1,0 +1,49 @@
+<head>
+    <style>
+        body{
+            background-image: linear-gradient(to right top, #081b2e, #091725, #07121c, #050c13, #030405);
+            color: #fff;
+        }
+        .getId{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        .getId div{
+            margin-top: 15rem;
+            text-align: center;
+            border: 2px solid #fff;
+            padding: 2rem;
+            transform: scale(1.2);
+        }
+        .getId div:hover{
+            transform: scale(1.4);
+            transition: all ease-in-out .2s;
+        }
+        .getId ul{
+            list-style: none;
+            padding: 0;
+            margin-bottom: 1.3rem;
+        }
+        button a{
+            text-decoration: none;
+            color: #000;
+        }
+
+    </style>
+</head>
+
+<div class="getId">
+    <div>
+        <h1>#{{listar.id}} {{listar.nome}}</h1>
+    
+        <ul>
+            <li><strong>Módulos:</strong> {{listar.modulos}}</li>
+            <li><strong>Turmas:</strong> {{listar.turmas}}</li>
+            <li><strong>Carga-horária:</strong> {{listar.cargaHoraria}}</li>
+            <li><strong>Descrição:</strong> {{listar.descricao}}</li>
+        </ul>
+        <button><a href="/cursos/edit/{{listar.id}}">Editar</a></button>
+        <button><a href="/cursos">Voltar</a></button>
+    </div>
+</div>

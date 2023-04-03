@@ -1,0 +1,33 @@
+<head>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <header class="infoHeader">
+        <h1>Professores</h1>
+        <p>Nosso time de professores:</p>
+        
+    </header>
+    <div class="btnCad">
+        <button><a href="/">Rotas</a></button>
+        <button><a href="/professor">Cadastro de professor</a></button>
+        <button><a href="/buscarprofessor">Buscar</a></button>
+    </div>
+    <div class="infoCursos">
+        {{#each listarProf}}
+        <div>
+            <h2>#{{id}} {{nome}}</h2>
+            <a class="linkInfos" href="/professor/{{this.id}}">
+                <ul>
+                    <li><strong>Matricula:</strong> {{matricula}}</li>
+                    <li><strong>Telefones:</strong> {{telefone}}</li>
+                    <li><strong>Endereço:</strong> {{endereco}}</li>
+                </ul>
+                <button><a href="/professor/edit/{{this.id}}">Editar</a></button>
+                <button><a href="/removeprofessor/{{this.id}}">Excluir</a></button>
+            </a>
+        </div>
+        {{/each}}
+    </div>
+    
+</body>
